@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>HA'KA GOKAR</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    header {
+      background-color: #c62828;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      text-shadow: 1px 1px 2px black;
+    }
+    .produk {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .item {
+      background: #fff;
+      border: 2px solid #ff5252;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 10px #ffcccc;
+      transition: transform 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.03);
+    }
+    .item h3 {
+      margin: 0;
+      color: #b71c1c;
+    }
+    .item p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .wa-button {
+      display: block;
+      text-align: center;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      margin: 30px auto;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 0 10px #a5d6a7;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #fce4ec;
+      color: #444;
+      font-size: 14px;
+    }
+    .galeri {
+      text-align: center;
+      padding: 20px;
+    }
+    .galeri h2 {
+      color: #c62828;
+    }
+    .foto-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      padding: 10px;
+    }
+    .foto-container img {
+      scroll-snap-align: center;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    .musik-control {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .musik-control button {
+      background: #c62828;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgm" loop autoplay>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3">
+    Browser tidak mendukung audio.
+  </audio>
+  <header>
+    <h1>HA'KA GOKAR</h1>
+    <p>Jajanan Merakyat, Rasa Sultan 👑</p>
+  </header>
+  <div class="musik-control">
+    <button onclick="document.getElementById('bgm').play()">▶️ Putar Musik</button>
+    <button onclick="document.getElementById('bgm').pause()">⏸️ Hentikan</button>
+  </div>
+  <section class="produk">
+    <div class="item"><h3>Aneka Sosis</h3><p>Harga: Rp 1.000 - 2.000</p></div>
+    <div class="item"><h3>Pop Ice</h3><p>Harga: Rp 4.000</p></div>
+    <div class="item"><h3>Es Teh</h3><p>Harga: Rp 3.000</p></div>
+    <div class="item"><h3>Kopi</h3><p>Harga: Rp 5.000</p></div>
+    <div class="item"><h3>Mie Rebus/Goreng</h3><p>Harga: Rp 5.000</p></div>
+  </section>
+  <section class="galeri">
+    <h2>📸 Galeri Promosi</h2>
+    <div class="foto-container">
+      <img src="https://i.imgur.com/3STB4nD.jpg" alt="Poster 1">
+      <img src="https://i.imgur.com/bWW97l7.jpg" alt="Poster 2">
+    </div>
+  </section>
+  <a class="wa-button" href="https://wa.me/6281273214845" target="_blank">
+    📲 Pesan Sekarang via WhatsApp
+  </a>
+  <footer>
+    &copy; 2025 HA'KA GOKAR. Dibuat dengan semangat jualan 💪
+  </footer>
+</body>
+</html>
